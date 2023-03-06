@@ -8,7 +8,7 @@ const User= require('./models/ReactDataSchema')
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/Kp-webdata', { useNewUrlParser: true});
+mongoose.connect('mongodb+srv://kp-webserver-main-db-0717aa9d2be:e9sFRsst2EadSUz2udvAfamEnPbaEY@prod-us-central1-2.ih9la.mongodb.net/kp-webserver-main-db-0717aa9d2be', { useNewUrlParser: true});
 
 app.post('/insert', async(req, res) => {
 
